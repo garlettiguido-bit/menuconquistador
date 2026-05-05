@@ -6,15 +6,16 @@
     <title>Menu Conquistador</title>
     <style>
         body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background:#000; color:#fff; }
-        .header { background:#b71c1c; padding:25px; text-align:center; border-bottom: 5px solid #ffcc00; position: sticky; top: 0; z-index: 100; }
-        .header h1 { margin:0; font-size:22px; text-transform: uppercase; letter-spacing: 1px; }
-        .header p { margin:5px 0 0; font-size:14px; color: #ffcc00; font-weight: bold; }
+        .header { background:#b71c1c; padding:20px; text-align:center; border-bottom: 5px solid #ffcc00; position: sticky; top: 0; z-index: 100; }
+        .header h1 { margin:0; font-size:20px; text-transform: uppercase; }
+        .header p { margin:5px 0 0; font-size:13px; color: #ffcc00; font-weight: bold; }
         .container { padding:15px; display: flex; flex-direction: column; gap: 15px; }
-        .card { background:#1a1a1a; border-radius:15px; overflow:hidden; display: flex; align-items: center; border: 1px solid #333; height: 110px; }
-        .card img { width:110px; height:110px; object-fit:cover; border-right: 3px solid #b71c1c; }
-        .card-content { padding:12px; flex-grow: 1; }
-        .name { font-size:16px; font-weight:bold; text-transform: uppercase; color: #fff; }
-        .price { color:#ffcc00; font-size:20px; font-weight: bold; margin-top:5px; }
+        .card { background:#1a1a1a; border-radius:15px; overflow:hidden; display: flex; align-items: stretch; border: 1px solid #333; min-height: 120px; }
+        .card img { width:110px; min-height:120px; object-fit:cover; border-right: 3px solid #b71c1c; }
+        .card-content { padding:12px; flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
+        .name { font-size:16px; font-weight:bold; text-transform: uppercase; color: #fff; margin-bottom: 4px; }
+        .ingredients { font-size:12px; color: #bbb; font-style: italic; line-height: 1.3; margin-bottom: 6px; }
+        .price { color:#ffcc00; font-size:19px; font-weight: bold; margin-top: auto; }
     </style>
 </head>
 <body>
@@ -26,37 +27,65 @@
 
         <div class="card">
             <img src="https://i.ibb.co/ZzLn4Scr/planchitas.png">
-            <div class="card-content"><div class="name">Planchitas</div><div class="price">25€</div></div>
+            <div class="card-content">
+                <div class="name">Planchitas</div>
+                <div class="ingredients">Saporite fettine di carne, chorizos, uova, patate, pomodoro, cipolla e peperoncino verde (locoto).</div>
+                <div class="price">25€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/MxpF80nm/pique-macho.png">
-            <div class="card-content"><div class="name">Pique Macho</div><div class="price">16€</div></div>
+            <div class="card-content">
+                <div class="name">Pique Macho</div>
+                <div class="ingredients">Bocconcini di manzo, wurstel, patatine fritte, uova sode, pomodoro e peperoni a strisce.</div>
+                <div class="price">16€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/wrs9xsdf/pollo-broadster.png">
-            <div class="card-content"><div class="name">Pollo Broaster</div><div class="price">13€</div></div>
+            <div class="card-content">
+                <div class="name">Pollo Broaster</div>
+                <div class="ingredients">Pollo fritto con panatura croccante e speziata, servito con patate fritte e riso.</div>
+                <div class="price">13€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/nMXgt023/pollo-a-la-canasta.png">
-            <div class="card-content"><div class="name">Pollo a la Canasta</div><div class="price">13€</div></div>
+            <div class="card-content">
+                <div class="name">Pollo a la Canasta</div>
+                <div class="ingredients">Pezzi di pollo fritto dorato, accompagnati da patate fritte croccanti e salse.</div>
+                <div class="price">13€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/xqyM5nnr/churrasco.png">
-            <div class="card-content"><div class="name">Churrasco</div><div class="price">16€</div></div>
+            <div class="card-content">
+                <div class="name">Churrasco</div>
+                <div class="ingredients">Controfiletto alla griglia, servito con riso al formaggio, manioca (yuca), patate e insalata.</div>
+                <div class="price">16€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/yBPVCz6s/chuleta-con-choclo.png">
-            <div class="card-content"><div class="name">Chuleta con Choclo</div><div class="price">16€</div></div>
+            <div class="card-content">
+                <div class="name">Chuleta con Choclo</div>
+                <div class="ingredients">Costoletta di maiale alla piastra, mais boliviano (choclo) a chicchi grandi e patate.</div>
+                <div class="price">16€</div>
+            </div>
         </div>
 
         <div class="card">
             <img src="https://i.ibb.co/FbGcQR9x/pato-dorado.png">
-            <div class="card-content"><div class="name">Pato Dorado</div><div class="price">20€</div></div>
+            <div class="card-content">
+                <div class="name">Pato Dorado</div>
+                <div class="ingredients">Anatra arrosto dalla pelle croccante, servita con patate e contorni tradizionali.</div>
+                <div class="price">20€</div>
+            </div>
         </div>
 
     </div>
